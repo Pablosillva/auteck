@@ -4,26 +4,59 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-li, a {
+
+li,
+a {
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;
 }
+
 header {
-    display: flex;
-    justify-content: center;
     background-color: #DAE2DF;
+    padding-inline: 16px;
 }
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 1000px;
 }
+
+.hamburger {
+    display: none;
+}
+
 .logo-img {
     width: 200px;
 }
-nav ul, nav li {
+
+nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+
+}
+
+.nav-list a {
+    padding-block: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #303841;
+}
+
+/* nav ul,
+nav li {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -40,37 +73,44 @@ nav a {
     text-transform: uppercase;
     color: #303841;
 }
-nav .active a, nav a:hover {
+*/
+nav .active a,
+nav a:hover {
     background-color: #FF5722;
     color: white;
     border-radius: 5px;
 }
+
 h1 {
     font-size: 60px;
     color: #FF5722;
-    text-shadow: 0px 0px 10px black ;
+    text-shadow: 0px 0px 10px black;
 }
+
 h2 {
     color: #E2DADB;
     font-size: 40px;
     padding: 40px;
-    text-shadow: 0px 0px 8px black ;
+    text-shadow: 0px 0px 8px black;
 }
+
 h3 {
     font-size: 30px;
     color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 5px black ;
+    text-shadow: 0px 0px 5px black;
 }
+
 h4 {
     font-size: 20px;
     text-transform: uppercase;
     color: #303841;
 }
+
 .texto-banner {
     font-size: 18px;
     color: white;
     margin-bottom: 10px;
-    text-shadow: 0px 0px 5px black ;
+    text-shadow: 0px 0px 5px black;
 }
 
 .fundo {
@@ -122,7 +162,7 @@ hr {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    flex-flow:row wrap;
+    flex-flow: row wrap;
 }
 
 .service {
@@ -133,9 +173,11 @@ hr {
     text-align: center;
     width: 250px;
 }
+
 .service:hover {
     background-color: #b6320a;
 }
+
 .sobre {
     background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.651)), url(imagens/fundo-sobre.jpg);
     background-position: center;
@@ -151,6 +193,7 @@ hr {
     margin-bottom: 40px;
     width: 700px;
 }
+
 .g-clientes {
     display: flex;
     flex-wrap: wrap;
@@ -166,6 +209,7 @@ hr {
     width: 50px;
     border-radius: 50%;
 }
+
 .cliente1 {
     background-color: #ff5622;
     padding: 20px;
@@ -174,6 +218,7 @@ hr {
     text-align: center;
     width: 250px;
 }
+
 .cliente1:hover {
     background-color: #b6320a;
 }
@@ -182,13 +227,14 @@ hr {
     color: #E2DADB;
     text-transform: uppercase;
     padding: 5px;
-    text-shadow: 0px 0px 5px black ;
+    text-shadow: 0px 0px 5px black;
 }
 
 .texto-cliente {
     color: #E2DADB;
-    text-shadow: 0px 0px 2px black ;
+    text-shadow: 0px 0px 2px black;
 }
+
 .contato {
     display: flex;
     justify-content: center;
@@ -202,6 +248,7 @@ hr {
     width: 100%;
     margin-bottom: 30px;
 }
+
 .formulario {
     color: white;
     font-size: 18px;
@@ -218,6 +265,7 @@ input {
     margin-bottom: 5px;
     border-radius: 5px;
 }
+
 textarea {
     width: 400px;
     height: 100px;
@@ -226,6 +274,7 @@ textarea {
     resize: none;
     border-radius: 5px;
 }
+
 footer {
     display: flex;
     justify-content: center;
@@ -236,21 +285,23 @@ footer {
     display: flex;
 
 }
+
 .footer-area-1 {
     padding: 20px;
     width: 250px;
-    margin: 20px;
 }
+
 .footer-area-2 {
     padding: 20px;
-    margin: 20px;
     width: 250px;
     text-align: center;
 }
+
 .footer-area-2 ul li {
     font-size: 18px;
     padding: 10px;
 }
+
 .footer-area-2 li a {
     color: #303841;
 
@@ -258,12 +309,13 @@ footer {
 
 .footer-area-3 {
     padding: 20px;
-    margin: 20px;
     width: 250px;
 }
+
 #img-footer {
     width: 200px;
 }
+
 .redes_sociais img {
     width: 55px;
     margin: 5px;
@@ -272,10 +324,18 @@ footer {
 }
 
 .title-footer {
-    font-size: 20px;
+    font-size: 30px;
     padding: 5px;
     color: #ff5622;
 }
+
+.title-footer3 {
+    align-items: center;
+    font-size: 30px;
+    padding: 5px;
+    color: #ff5622;
+}
+
 .icon img {
     width: 30px;
 }
@@ -288,9 +348,122 @@ footer {
 .texto-contato {
     padding: 10px;
 }
+
 .copyright {
     background: #b1b6b4;
     color: #fff;
     text-align: center;
     padding: 5px;
+}
+
+.btnMobile {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #303841;
+    cursor: pointer;
+}
+
+.btnMobile::before,
+.btnMobile::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #303841;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+@media(max-width: 768px) {
+
+    .btnMobile {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #DAE2DF;
+        clip-path: circle(80px at 90% -15%);
+        transition: 1s ease-out;
+        pointer-events: none;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+    }
+
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .nav.active .nav-list a {
+        opacity: 1;
+    }
+
+    .nav.active .btnMobile {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .btnMobile::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .btnMobile::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .fundo-form {
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .column {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-area {
+        flex-direction: column;
+    }
+
+    .title-footer3 {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        padding: 5px;
+        color: #ff5622;
+        justify-content: center;
+    }
 }
