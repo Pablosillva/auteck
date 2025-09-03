@@ -379,6 +379,9 @@ footer {
 
 @media(max-width: 768px) {
 
+    .container {
+        width: auto;
+    }
     .btnMobile {
         display: block;
         z-index: 1;
@@ -416,6 +419,14 @@ footer {
 
     .nav-list li:nth-child(3) a {
         transition: 0.5s 0.6s;
+    }
+
+    .nav-list li:nth-child(4) a {
+        transition: 0.5s 0.8s;
+    }
+
+    .nav-list li:nth-child(5) a {
+        transition: 0.5s 1s;
     }
 
     .nav.active .nav-list {
@@ -466,4 +477,21 @@ footer {
         color: #ff5622;
         justify-content: center;
     }
+}
+
+@media(max-width: 480px) {
+
+h1 {
+    font-size: 50px;
+    color: #FF5722;
+    text-shadow: 0px 0px 10px black;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.texto-banner {
+    font-size:
+}
 }
